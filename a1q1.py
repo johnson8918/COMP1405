@@ -22,4 +22,3 @@ else:
 
 print("----------------------------------------")
 print("Your final grade is: ", final)
-print(assign, exam, midterm, test1, test2)

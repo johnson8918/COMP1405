@@ -1,6 +1,8 @@
 print("Grade Calculator")
+
 print("----------------------------------------")
 name = input("Please enter student name: ")
+print("----------------------------------------")
 
 assign =  0.5 * float(input(name + ", please enter your assignment grade: "))
 test1 = float(input(name + ", please enter your midterm 1 grade: "))
@@ -13,10 +15,11 @@ else:
     midterm = 0.12 * (test1 + test2)
 
 
-if (exam + midterm) < 50 :
+if exam + midterm < 25 :
     final = 2 * (midterm + exam)
 else:
     final = assign + midterm + exam
 
 print("----------------------------------------")
 print("Your final grade is: ", final)
+print(assign, exam, midterm, test1, test2)
